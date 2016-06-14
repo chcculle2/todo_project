@@ -1,0 +1,219 @@
+@import url("whitespace-reset.css");
+
+@font-face {
+  font-family: "Helvetica-Normal";
+  src: url(helvetica-normal.ttf) format("truetype");
+}
+body {
+  font-family: "Helvetica-Normal", sans-serif;
+  font-size: 16px;
+  color: #050505;
+	margin: 0;
+  height: 100%;
+  letter-spacing: 2.0px;
+  font-weight: 100;
+}
+h2 {
+  font-size: 21px;
+  color: #050505;
+  font-weight: normal;
+  font-weight: 100;
+  letter-spacing: 2.0px;
+  /*
+  padding: 31px 0 42px 0;
+  */
+}
+h1 {
+  font-size: 18px;
+  color: #d8d9e0;
+  font-weight: normal;
+  letter-spacing: 2.0px;
+  font-weight: 100;
+  margin: 0 0 16px 0;
+  padding:74px 0 0 125px;
+  height: 30px;
+}
+h1.all {
+  background: transparent url("images/list-icon.png") 90px 70px no-repeat;
+}
+.completed h1{
+  background: transparent url("images/checkbox.png") 90px 70px no-repeat;
+}
+h1.completed {
+  background: transparent url("images/checkbox.png") 90px 70px no-repeat;
+}
+.completed {
+}
+.completed .entry_date {
+    text-decoration: line-through;
+}
+h1:after {
+    border-radius: 50px;
+    background-color: #6b7292;
+    font-size: 14px;
+    float: left;
+    padding: 2px 2px;
+    margin: -22px 0 0 151px;
+    content: "18";
+    color: #ccced8;
+  }
+h3 {
+  font-size: 16px;
+  color: #4ba1db;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+.entry {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  background-color: #464f77;
+  color: #b2b5c3;
+  padding: 4px 33px 10px 125px;
+  text-decoration: line-through;
+}
+.entry_date {
+  font-size: 16px;
+  float: left;
+}
+.entry_count {
+  font-size: 14px;
+}
+.count_circle {
+  border-radius: 50px;
+  background-color: #6b7292;
+  font-size: 14px;
+  float: left;
+  padding: 3px 5px;
+  margin: -18px 0 0 151px;
+}
+.selected {
+  color: #ffffff;
+  background-color: #383f5f;
+}
+.count_circle.selected {
+  background-color: #148fd5;
+  color: #f4f9fc;
+}
+header {
+  box-sizing: border-box;
+  padding: 70px 0 40px 0;
+}
+
+h2:after {
+  border-radius: 50px;
+  background-color: #148fd5;
+  color: #f4f9fc;
+  font-size: 14px;
+  padding: 3px 6px;
+  margin: -22px 0 0 25px;
+  content: "8";
+  }
+nav {
+  background: transparent url("images/checkbox.png") 90px 70px no-repeat;
+}
+nav li {
+  color: #b2b5c3;
+  list-style:none;
+  display: inline-block;
+};
+main {
+  height: 100%;
+}
+.nav-bars {
+  box-sizing: border-box;
+  padding: 0 20px 220px 0;
+  background-color: #464f77;
+  color: #b2b5c3;
+  float: left;
+  width: 335px;
+	height: 100%;
+}
+.main-section{
+  padding: 0 100px 220px 32px;
+  overflow: auto;
+  height: 100%;
+}
+  body, html {
+	margin: 0;
+  height: 100%;
+}
+.item {
+  border-top: solid;
+  line-height: 48px;
+  color: #060606;
+  border-color: #e7e7e7;
+  border-width: thin;
+
+}
+.item:before {
+  display: inline-block;
+  background: transparent url("images/item-checkbox.png")  0 0 no-repeat;
+  height: 15px;
+  width: 15px;
+  content: "";
+  margin: 0 15px 0 0 ;
+  background-position: 0 1px;
+}
+.item:after {
+background: transparent url("images/trash.png") 0 0 no-repeat;
+display: inline-block;
+float: right;
+margin: 20px 0 0 0;
+height: 20px;
+width: 25px;
+content: "";
+}
+.done {
+  color: #b3b3b3;
+}
+.done:before {
+  background: transparent url("images/checked-box.png")  0 0 no-repeat;
+}
+
+
+h3:before {
+  background-image: url("images/add.png");
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    content: "";
+    margin: 0 15px 0 0 ;
+    background-position: 0 1px;
+}
+.menu-icon {
+background: transparent url("images/menu-icon.png") 0 0 no-repeat;
+display: inline-block;
+height: 20px;
+width: 20px;
+content: "";
+margin: 0 15px 30px 0 ;
+}
+.hide-menu-icon {
+background: transparent url("images/hide-menu-icon.png") 0 0 no-repeat;
+display: inline-block;
+height: 20px;
+width: 20px;
+content: "";
+margin: 0 15px 30px 0 ;
+}
+
+.trash {
+background: transparent url("images/trash.png") 0 0 no-repeat;
+display: inline-block;
+float: right;
+height: 20px;
+width: 25px;
+content: "";
+}
+.new {
+  color: #148fd5;
+}
+.done {
+  color #b3b3b3;
+}
+.form {
+  width: 575px;
+  height: 400px;
+  background-color: white;
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+    <style>
+
+    @font-face {
+      font-family: "Helvetica-Normal";
+      src: url(helvetica-normal.ttf) format("truetype");
+    }
+    body {
+      font-family: "Helvetica-Normal", sans-serif;
+      font-size: 16px;
+      color: #050505;
+  		margin: 0;
+      height: 100%;
+      letter-spacing: 2.0px;
+      font-weight: 100;
+    }
+
+    .modal {
+      box-sizing: border-box;
+      padding: 35px;
+      width: 575px;
+      height: 400px;
+      background-color: #ffffff;
+      color: #070707;
+    }
+    .row {
+      margin: 0 0 20px 0;
+    }
+    .button {
+      background-color: #148fd5;
+      border-radius: 5px;
+      color: #ffffff;
+      height: : 35px;
+      width: 175px;
+      padding: 5px 0;
+      text-align:center;
+      border-style: none;
+      margin-left: 130px;
+    }
+    .button + .button {
+      margin-left: 20px;
+    }
+    
+    label.field {
+      text-align: left;
+      width: 130px;
+      float: left;
+      font-weight: normal;
+    }
+
+    input {
+      width: 350px;
+      height: 33px
+    }
+    fieldset p {
+      clear: both;
+      padding: 5px;
+    }
+    select {
+      width: 115px;
+      height: 33px;
+    }
+    </style>
+  </head>
+  <main class="modal">
+
+    <form action="" method="post">
+      <fieldset>
+        <p class="row">
+          <label class="field" for="title">Title</label>
+          <input type="text" name="title" />
+        </p>
+          <p class="row">
+            <label class="field" for="duedate">Due Date</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16" selected>16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+              <select>
+                <option value="month">Month</option>
+            </select>
+              <select>
+                <option value="year">Year</option>
+            </select>
+          </p>
+        <p class="row">
+          <label class="field" for ="description">Description</label>
+          <textarea rows="6" cols="55" name="description" id="description"></textarea>
+        </p>
+      </fieldset>
+      <input class="button" type="submit" value="Save">
+      <input class="button" type="reset" value="Mark as Complete">
+    </form>
+  </main>
+</html>
