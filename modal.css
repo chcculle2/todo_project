@@ -1,0 +1,123 @@
+
+    @font-face {
+      font-family: "Helvetica-Normal";
+      src: url(helvetica-normal.ttf) format("truetype");
+    }
+    body {
+      font-family: "Helvetica-Normal", sans-serif;
+      font-size: 16px;
+      color: #050505;
+  		margin: 0;
+      height: 100%;
+      letter-spacing: 2.0px;
+      font-weight: 100;
+    }
+    .modal {
+      box-sizing: border-box;
+      padding: 35px;
+      width: 575px;
+      height: 400px;
+      background-color: #ffffff;
+      color: #070707;
+      display: none ;
+    }
+    input:checked ~ .modal {
+        box-sizing: border-box;
+        padding: 35px;
+        width: 575px;
+        height: 400px;
+        background-color: #ffffff;
+        color: #070707;
+        display: block ;
+    }
+    .row {
+      margin: 0 0 20px 0;
+      font-size: 14px;
+    }
+    .form-box {
+      width: 350px;
+      margin: 15px 0 20px 130px;
+      height:35px;
+    }
+    .form-box .my-btn:first-child {
+      margin: 0 20px 0 0 ;
+    }
+    .my-btn {
+      width:calc(50% - 10px);
+      position: relative;
+      float:left;
+      font-size: 16px;
+      border-style: none;
+      border-radius: 3px;
+      text-decoration: none;
+      background-color: #148fd5;
+      color: #ffffff;
+      text-align: center;
+      font-weight: lighter;
+    }
+    label.field {
+      text-align: left;
+      width: 130px;
+      float: left;
+      font-weight: normal;
+      color: #060606;
+    }
+
+    input {
+      width: 350px;
+      height: 33px;
+      color: #464f77;
+      font-size: 15px;
+    }
+    fieldset p {
+      clear: both;
+      padding: 5px;
+    }
+    select {
+      width: 115px;
+      height: 33px;
+    }
+    textarea {
+      resize: none;
+      border-color: #a1a1a1;
+    }
+    .modal-dialog {
+    background: #fefefe;
+    border: #333 solid 1px;
+    margin-left: -200px;
+    position: fixed;
+    left: 40%;
+    top: -100%;
+    z-index: 11;
+    padding: 35px;
+    width: 575px;
+    height: 400px;
+  }
+
+
+  .btn-close {
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+
+  .modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .modal:target:before {
+    display: block;
+  }
+  .modal:target .modal-dialog {
+    top: 20%;
+  }
