@@ -1,38 +1,43 @@
 <!doctype html>
-<html>
+<html lang="en-US">
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <title>ToDo</title>
+    <meta charset="UTF-8" />
     <style>
-
     </style>
   </head>
   <main>
+
+
+    <input type="checkbox" class="hidden"  id="toggle"/>
+    <label for="toggle" class="hamburger"></label>
+
     <section class="nav-bars">
       <h1 class="all">All Todos</h1>
       <div class="entry selected">
         <div class="entry_date">02/16</div>
-        <div class="count_circle selected">8</div>
+        <div class="count_circle selected"> 8</div>
       </div>
       <div class="entry">
         <div class="entry_date">03/16</div>
-        <div class="count_circle">2</div>
+        <div class="count_circle"> 2</div>
       </div>
       <div class="entry">
         <div class="entry_date">04/16</div>
-        <div class="count_circle">1</div>
+        <div class="count_circle"> 1</div>
       </div>
       <div class="entry">
         <div class="entry_date">05/16</div>
-        <div class="count_circle">1</div>
+        <div class="count_circle"> 1</div>
       </div>
       <div class="entry">
         <div class="entry_date">06/16</div>
-        <div class="count_circle">6</div>
+        <div class="count_circle"> 6</div>
       </div>
 
-      <div class="completed">
-        <h1 >Completed</h1>
+        <h1 class="completed">All Todos</h1>
         <div class="entry ">
           <div class="entry_date">02/15</div>
         </div>
@@ -49,17 +54,15 @@
           <div class="entry_date">06/15</div>
         </div>
       </div>
-
-
     </section>
     <section class="main-section">
       <header>
-        <!-- <div class="menu-icon"></div> -->
         <h2>02/16</h2>
       </header>
-      <h3>Add new to do</h3>
+      <!-- click on h3 to activate modal -->
+      <h3><a href="#modal-one">Add new to do</a></h3>
         <div class="item">item 1</div>
-        <div class="item new">item 2</div>
+        <div class="item ">item 2</div>
         <div class="item done">item 3</div>
         <div class="item done">item 4</div>
         <div class="item done">item 5</div>
@@ -67,7 +70,75 @@
         <div class="item">item 7</div>
         <div class="item">item 8</div>
         <div class="item">item 9</div>
+
+        <!-- Modal-->
+        <div class="modal" id="modal-one" >
+          <div class="modal-dialog">
+            <div >
+              <a href="#" class="btn-close" >×</a>
+            </div>
+              <form action="" method="post">
+                <fieldset>
+                  <p class="row">
+                    <label class="field" for="title">Title</label>
+                    <input type="text" name="title" value=" item 2"/>
+                  </p>
+                  <p class="row">
+                    <label class="field" for="duedate">Due Date</label>
+                    <select class="day_of_month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16" selected>16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select> /
+                      <select class="month">
+                        <option value="month">Month</option>
+                    </select> /
+                      <select class="year">
+                        <option value="year">Year</option>
+                    </select>
+                  </p>
+                  <p class="row">
+                    <label class="field" for ="description">Description</label>
+                    <textarea rows="12" cols="55" name="description" id="description" placeholder="Description"></textarea>
+                  </p>
+                  <div class="form-box">
+                  <input class="my-btn" type="submit" value="Save">
+                  <input class="my-btn" type="submit" value="Mark As Complete">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
     </section>
 
   </main>
+
 </html>

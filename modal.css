@@ -1,0 +1,150 @@
+
+    @font-face {
+      font-family: "Helvetica-Normal";
+      src: url(helvetica-normal.ttf) format("truetype");
+    }
+    select, input, textarea {
+      font: normal 17px  "Helvetica-Normal", arial, sans-serif;
+      border-color: #c5c5c5;
+      border-width: 1px;
+      border-style:solid;
+      font-weight: lighter;
+
+    }
+    .modal {
+      box-sizing: border-box;
+      padding: 35px;
+      width: 575px;
+      height: 400px;
+      background-color: #ffffff;
+      color: #070707;
+      display: block ;  font-family: "Helvetica-Normal", sans-serif;
+        font-size: 17px;
+
+    }
+    input:checked ~ .modal {
+        box-sizing: border-box;
+        padding: 35px;
+        width: 575px;
+        height: 400px;
+        background-color: #ffffff;
+        color: #070707;
+        display: block ;
+    }
+    .row {
+      margin: 0 0 20px 0;
+      font-size: 17px;
+    }
+    .form-box {
+      width: 420px;
+      margin: 15px 0 20px 133px;
+      height:35px;
+    }
+    .form-box .my-btn:first-child {
+      margin: 0 20px 0 0 ;
+    }
+    .my-btn {
+      width:195px;
+      height: 38px;
+      position: relative;
+      float:left;
+      font-size: 17px;
+      border-style: none;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: #148fd5;
+      color: #ffffff;
+      text-align: center;
+      font-weight: lighter;
+    }
+    label.field {
+      text-align: left;
+      width: 130px;
+      float: left;
+      font-weight: normal;
+      color: #060606;
+      padding: 12px 0 0 0;
+    }
+
+    input {
+      width: 395px;
+      height: 33px;
+      color: #464f77;
+      font-size: 17px;
+      padding: 0 0 0 10px;
+    }
+    fieldset p {
+      clear: both;
+      padding: 5px;
+    }
+    select {
+      width: 115px;
+      height: 33px;
+      background-color: white;
+      font-size: 17px;
+      color: #a1a1a1;
+      -webkit-border-radius: 0px;
+
+
+     border: 0;
+     outline: 1px solid #a1a1a1;
+  }
+    textarea {
+      resize: none;
+      padding: 10px;
+      font-size: 17px;
+      width: 388px;
+      height: 155px;
+      color: #c8c8c8;
+    }
+    .modal-dialog {
+    background: #fefefe;
+    border: #333 solid 1px;
+    margin-left: -200px;
+    position: fixed;
+    left: 40%;
+    top: -100%;
+    z-index: 11;
+    padding: 35px;
+    width: 575px;
+    height: 400px;
+  }
+
+
+  .btn-close {
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+
+  .modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .modal:target:before {
+    display: block;
+  }
+  .modal:target .modal-dialog {
+    top: 20%;
+  }
+
+  select.day_of_month {
+    color: black;
+    margin-right: 6px;
+  }
+  select.month {
+    margin: 0 6px;
+  }
+  select.year {
+    margin-left: 6px;
+  }
